@@ -8,6 +8,8 @@ When the "generate" button is pressed, the user is first prompted to choose a le
 
 Once the parameters have all been chosen, the password is generated and displayed on the page.
 
+The user also has the option to, with the press of a second button, copy the result to their clipboard.
+
 ## Deployment
 
 The page repository can be found at [the GitHub page](https://github.com/chriseld/password-generator).
