@@ -14,3 +14,10 @@ The user also has the option to, with the press of a second button, copy the res
 
 The page repository can be found at [the GitHub page](https://github.com/chriseld/password-generator).
 The deployed version of the page can be found at [GitHub Pages](https://chriseld.github.io/password-generator/).
+
+## Screenshots
+Before being run:
+![Screenshot of the generator before being run](https://github.com/chriseld/password-generator/blob/master/screenshots/password-generator-1.png)
+
+After being run:
+![Screenshot of the generator after being run](https://github.com/chriseld/password-generator/blob/master/screenshots/password-generator-2.png)
