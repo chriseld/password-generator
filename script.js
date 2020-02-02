@@ -53,33 +53,27 @@ function generate() {
 
   var lowerRange = [];
   var upperRange = [];
-  var counter = 0;
 
   // Pushes the lower and upper bounds of the decimal charcode ranges for each character type.
-  // Increases the counter by 1 for each character type chosen.
 
   if(lower === true) {
     lowerRange.push(97);
     upperRange.push(122);
-    counter++;
   }
 
   if(upper === true) {
     lowerRange.push(65);
     upperRange.push(90);
-    counter++;
   }
 
   if(number === true) {
     lowerRange.push(48);
     upperRange.push(57);
-    counter++;
   }
 
   if(special === true) {
     lowerRange.push(33);
     upperRange.push(47);
-    counter++;
   }
 
   // For the length of the password, randomly select which character type to use from those chosen.
@@ -88,7 +82,7 @@ function generate() {
 
 
   for(i = 0; i < length; i++) {
-    var charType = Math.floor(Math.random() * counter);  
+    var charType = Math.floor(Math.random() * lowerRange.length);  
     var charGen = Math.floor(Math.random() * (upperRange[charType] - lowerRange[charType] + 1) + lowerRange[charType]);
     password += String.fromCharCode(charGen);
   }
